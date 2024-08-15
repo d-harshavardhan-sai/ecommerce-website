@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="d-flex justify-content-center align-items-center bg-light vh-100">
+    <form method="post" action="signup.php" class="w-25 bg-warning p-4" onsubmit="return validate()">
+
+        <h3 class="text-center">Signup Here...</h3>
+
+        <input class="form-control mt-3" type="text" name="uname" required placeholder="Username">
+
+        <input class="form-control mt-2" type="password" id="upass1" name="upass1" required placeholder="Password">
+
+        <input class="form-control mt-2" type="password" id="upass2" name="upass2" required placeholder="Re-type password">
+
+        <select name="usertype" class="form-control mt-2">
+            <option value="Vendor">Vendor</option>
+            <option value="Customer">Customer</option>
+        </select>
+
+        <div class="text-center mt-3">
+             <button class=" btn btn-danger">Submit</button>
+        </div>
+        <div class="text-end">
+            <a class="text-dark" href="loginp.html">login here..</a>
+        </div>
+    </form>
+
+    <script>
+        upass1Obj=document.getElementById("upass1")
+        upass2Obj=document.getElementById("upass2")
+        function validate(){
+            if(upass1Obj.value==upass2Obj.value){
+                return true
+            }
+            else{
+                alert("Password Mismatch");
+                return false
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
