@@ -169,9 +169,9 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`userid`, `username`, `password`, `usertype`, `created_date`) VALUES
 (1, 'Harsha', 'h@123', 'Vendor', '2024-03-11 05:49:35'),
 (3, 'Harsha1', 'h@1234', 'Customer', '2024-03-11 05:50:06'),
-(4, 'james', 'j@123', 'Vendor', '2024-03-11 09:13:57'),
-(5, 'james1', 'j@1234', 'Customer', '2024-03-11 09:14:16'),
-(6, '22BCE20237', 'Puneeth', 'Customer', '2024-09-03 13:21:24');
+(4, 'sai', 'j@123', 'Vendor', '2024-03-11 09:13:57'),
+(5, 'sai1', 'j@1234', 'Customer', '2024-03-11 09:14:16'),
+(6, '22BCE20069', 'DHARSHA', 'Customer', '2024-09-03 13:21:24');
 
 --
 -- Indexes for dumped tables
